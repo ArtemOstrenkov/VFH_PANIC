@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">VHF Panic</string>
+    <string name="title_activity_tabbet">Tabbet</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="vbighope">BigHope</string>
+    <string name="vDraught">2.10</string>
+    <string name="vGPS">21 deg 12N 23 deg 23 E</string>
+    <string name="title_activity_act_text">ActText</string>
+    <string name="crewcount">8</string>
+    <string name="vLoa">14.4</string>
+    <string name="vWidthBoat">4.45</string>
+    <string name="title_activity_scrolling">seaspeak manual</string>
+    <string name="large_seaspeak_text">
+        "<h1>Phonetic alphabet.</h1>\n\n"
+        "	| 	A	-	ALPHA	 | 	N	-	NOVEMBER| 	\n\n"
+"	| 	B	-	BRAVO	 | 	O	-	OSCAR	| 	\n\n"
+"	| 	C	-	CHARLE	 | 	P	-	PAPA	| 	\n\n"
+"	| 	D	-	DELTA	 | 	Q	-	QUEBEC	| 	\n\n"
+"	| 	E	-	ECHO	 | 	R	-	ROMEO	| 	\n\n"
+"	| 	F	-	FOXTROT	 | 	S	-	SIERRA	| 	\n\n"
+"	| 	G	-	GOLF	 | 	T	-	TANGO	| 	\n\n"
+"	| 	H	-	HOTEL	 | 	U	-	UNIFORM	| 	\n\n"
+"	| 	I	-	INDIA	 | 	V	-	VICTOR	| 	\n\n"
+"	| 	J	-	JULIET	 | 	W	-	WHISKEY	| 	\n\n"
+"	| 	K	-	KILO	 | 	X	-	X-RAY	| 	\n\n"
+"	| 	L	-	LIMA	 | 	Y	-	YANKEE	| 	\n\n"
+"	| 	M	-	MIKE	 | 	Z	-	ZULU	| 	\n\n"
+    </string>
+    <string name="title_activity_scrolling_message">CALM AND LOUD</string>
+    <string name="MAYDAYRELAY">
+        "MAYDAY\n\n"
+        "'vessel name and call sign'\n\n"
+        "POSITION 'coodinates' AT 'time' UTC\n\n"
+        "'accident description'\n\n"
+    </string>
+
+
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+    </string>
+    <string name="title_activity_scrolling_show_message">Message</string>
+</resources>

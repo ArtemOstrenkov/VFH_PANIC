@@ -1,0 +1,51 @@
+<?xml version="1.1" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ostrenkov.artem.seaspeak">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TypeofDisaster" />
+        <activity android:name=".ActBoatInfo" />
+        <activity android:name=".ActMessage" />
+        <activity android:name=".MainTimeYouHave" />
+        <activity android:name=".Routine" />
+        <activity android:name=".Emergency" />
+        <activity
+            android:name=".SeaspeakINFO"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ActCoordinates" />
+        <activity android:name=".CallMarine" />
+        <activity android:name=".CallVessel" />
+        <activity android:name=".CancelDIstress" />
+        <activity
+            android:name=".ScrollingMessage"
+            android:label="@string/title_activity_scrolling_message"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ScrollingShowMessage"
+            android:label="@string/title_activity_scrolling_show_message"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".mayday_relay" />
+    </application>
+
+</manifest>

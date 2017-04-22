@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ostrenkov.artem.seaspeak.ActBoatInfo">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please fill boat name"
+        android:id="@+id/tvBoatName"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eBoatName"
+        android:layout_below="@+id/tvBoatName"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/vbighope"
+        android:maxLines="1"
+        android:textAlignment="textEnd"
+        tools:text='"MYBOAT"'
+        android:inputType="textShortMessage" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please fill the boat L.O.A. (length overall in feet) "
+        android:id="@+id/tLOA"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/eBoatName"
+        android:layout_marginTop="12dp"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eLOA"
+        android:layout_below="@+id/tLOA"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/vLoa"
+        android:textAlignment="textEnd"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please fill the draught of the boat"
+        android:id="@+id/tvFILLDRAUGHT"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/eLOA"
+        android:layout_marginTop="12dp"
+       />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eBoatDraught"
+        android:layout_below="@+id/tvFILLDRAUGHT"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/vDraught"
+        android:textAlignment="textEnd"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please fill the width of the boat"
+        android:id="@+id/tWidthBoat"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/eBoatDraught"
+        android:layout_marginTop="12dp"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eWidtgBoat"
+        android:layout_below="@+id/tWidthBoat"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/vWidthBoat"
+        android:textAlignment="textEnd"
+        android:inputType="numberDecimal" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/eWidtgBoat"
+        android:id="@+id/ll1"
+        android:weightSum="1"
+        tools:paddingTop="10dp"
+        android:layout_alignParentBottom="false">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How many crew on a board?          "
+            android:id="@+id/tHowManyCrew"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="12dp"
+            />
+
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tHowManyCrew"
+
+            android:id="@+id/sCrewcount"
+            android:layout_alignParentEnd="false"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="50pt"
+        android:layout_weight="1"
+        android:id="@+id/spacer"
+        android:layout_below="@id/ll1"
+        />
+
+
+    <Button
+        android:text="SAVE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickSave"
+        android:layout_below="@+id/spacer"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
